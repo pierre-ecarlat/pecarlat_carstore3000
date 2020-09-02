@@ -2,7 +2,7 @@ import enum
 
 from flask_sqlalchemy import SQLAlchemy
 
-from . import app
+from .views import app
 
 # Create database connection object
 db = SQLAlchemy(app)

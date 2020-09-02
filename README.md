@@ -9,6 +9,9 @@ import random, string
 "".join([random.choice(string.printable) for _ in range(24)])
 ```
 
+FLASK_APP=run.py flask init_db
+python3 run.py
+
 # Installation
 pip3 install python-dotenv
 pip3 install flask_sqlalchemy
