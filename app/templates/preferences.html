@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="formwrapper">
+	<h2 class="title">Contact</h2>
+	<form method="POST" action="/">
+		<div class="form-field">
+			{{ form.fuel_type.label }} {{ form.fuel_type(size=20) }}
+		</div>
+		<div class="form-field">
+			{{ form.transmisison.label }} {{ form.transmisison }}
+		</div>
+		<div class="form-field">
+			{{ form.color.label }} {{ form.color }}
+		</div>
+		{{ form.submit }}
+	</form>
+</div>
+{% endblock %}
